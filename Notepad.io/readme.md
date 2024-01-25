@@ -12,9 +12,9 @@ Visual Improvements
 
 Without further ado I leave you the readme.
 
-|||||||||||||||||||||
-||||||Database|||||||
-|||||||||||||||||||||
+
+	Database
+
 
 	***************************************************
 	*Please respect the syntax for testing the website*
@@ -62,9 +62,9 @@ Without further ado I leave you the readme.
 	Tag = (n,m)
 
 	
-|||||||||||||||||||||
-|||||||Server||||||||
-|||||||||||||||||||||
+
+	Server
+
 
 	
 	In my case I used XAMPP(MySQL, Apache) to connect my website to a database, I recommend that you also use XAMPP to avoid problems or errors.
@@ -76,9 +76,9 @@ Without further ado I leave you the readme.
 
 	If you use XAMPP, please remember to edit the connection
 
-|||||||||||||||||||||||||||||
-||Speech and recommendation||
-|||||||||||||||||||||||||||||
+
+	Speech and recommendation
+
 
 	It's really my first website and I couldn't understand very well the separation of backend and frontend layers, but I did the best I could, I don't have much knowledge about APIS or BASH so I recommend testing the website with XAMPP and on a computer that does not use Linux, I apologize for the low quality of the code and the lack of knowledge about certain sectors, I am very grateful that you have taken me into account anyway, I am willing to accept your verdict with my head held high. thank you so much.
 
