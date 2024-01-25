@@ -1,0 +1,656 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: none;
+	box-sizing: border-box;
+
+}
+
+
+.box{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 0px;
+	height: 100%;
+	padding: 0px 0px;
+}
+
+.boxe{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 0px;
+	height: 100%;
+	padding: 0px 0px;
+	background: none;
+}
+
+.raw{
+	position: relative;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+}
+
+
+[class*="col-"]{
+	float: left;
+	border: solid transparent ;
+}
+
+
+/* Section 1*/
+
+header #logo{
+	font-family: 'Grape Nuts', cursive;
+	font-size: 50px;
+	text-decoration: wavy;
+	text-align: center;
+	color: black;
+}
+
+header{
+	height: 80px;
+	background-image: linear-gradient(to right, rgba(255, 236, 210, 0.473) 0%, rgba(252, 182, 159, 0.5) 100%);
+}
+
+.dashbutton{
+	padding-top: 15px;
+	text-align: right;
+}
+
+.dashboardbutton{
+	background-color: rgb(198, 196, 236);
+	text-align: center;
+	text-decoration: wavy;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: black;
+	font-size: 20px;
+	font-family: 'Grape Nuts', cursive;
+	width: 200px;
+	height: auto;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.dashboardbutton:hover{
+	background-color: rgba(170, 66, 153, 0.4);
+}
+
+.dashboardbutton:active{
+	background-color: rgba(87, 162, 185, 0.4);
+}
+
+body{
+	background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.404) 0%, rgba(246, 128, 132, 0.418) 100%);
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 90px;
+}
+.hamburguer{
+	height: 40px;
+	width: 40px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.user{
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	transform: translate(150%);
+	transition: transform .3s ease-in-out;
+}
+
+.userinputs{
+	font-family: none;
+	text-align: center;
+	border-radius: 10px;
+}
+
+
+header .hamb:hover 	.user{
+	transform: translate(30%);
+}
+
+
+/* End of Section 1 */
+
+
+/*  |||||||||||||||||
+	||| ||INDEX|| ||| 
+	||||||||||||||||| */
+
+
+/* Section 2*/
+
+
+.article{
+	padding: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	justify-content: space-evenly;
+	background-size: cover;
+}
+
+
+.articleimg{
+	padding: 15px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../images/main.svg);
+	background-repeat: no-repeat;
+	justify-content: space-evenly;
+	background-size: fill;
+}
+
+.article div p{
+	font-weight: 200;
+	font-size: 25px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+.title{
+	top: 0;
+	font-weight: 300;
+	font-size: 40px;
+	margin-bottom: 15px;
+	text-align: center;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+article h1{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Grape Nuts', cursive;
+}
+article p{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Grape Nuts', cursive;
+}
+.notebox{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Grape Nuts', cursive;
+}
+
+.sub{
+text-align: center;
+justify-content: center;
+text-decoration: wavy;
+font-family: 'Grape Nuts', cursive;
+
+}
+
+.imagebox{
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
+	font-family: 'Grape Nuts', cursive;
+}
+
+.number{
+display: inline-block;
+width: 30px;
+height: 30px;
+background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+border-radius: 100%;
+margin-right: 5px;
+}
+/* End of Section 2 */
+
+/* Section 3*/
+
+.firstnote{
+	align-items: center;
+	flex-direction: column;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+	display: flex;
+}
+
+.firstnote .button{
+	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+	text-decoration: wavy;
+	color: black;
+	font-size: 25px;
+	font-family: 'Grape Nuts', cursive;
+	width: 280px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.firstnote .button:hover{
+	background-image: linear-gradient(45deg, #e09766 0%, #e9b1c7 99%, #4d4645 1%);
+}
+
+.firstnote .button:active{
+	background-image: linear-gradient(45deg, #ecbeec 0%, #e9b1c7 99%, #725c6d 1%);
+}
+
+
+/* End of Section 3 */
+
+
+/* Section 4*/
+
+.footer{
+	background-image: linear-gradient(to top, #a8ede928 0%, #fed6e33b 70%);
+	height: 75px;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+}
+
+footer div{
+	padding: 15px;
+	font-family: 'Grape Nuts', cursive;
+	font-size: 25px;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+}
+
+
+/* End of Section 4 */
+
+
+
+
+/*  |||||||||||||||||
+	||| DASHBOARD ||| 
+	||||||||||||||||| */
+
+	.menu{
+		background-color: rgb(128, 128, 128, 0.3);
+		height: 80dvh;
+		margin-top: 18px;
+		padding: 20px;
+		text-align: center;
+		align-items: center;
+		display: flex;
+		width: auto;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		border:dotted black 1px ;
+	}
+
+	.menu a{
+		font-family: 'Grape Nuts', cursive;
+		color: black;
+		
+	}
+
+	.anchors{	
+		background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+		width: 60%;
+		height: 25px;
+		margin: 10px;
+		border: solid black 1px;
+		border-radius: 15px;
+	}
+
+	.anchors:hover{
+		background-image: linear-gradient(to right, #68a7e267 0%, #eb67d58a 100%);
+	}
+	
+	.anchors:active{
+		background-image: linear-gradient(to right, #92c07d67 0%, #b176a78a 100%);
+	}
+
+	#notecreator{
+		display: none;
+
+	}
+
+	.notebutton{
+		width: 60%;
+	}
+
+	.noteactive{
+		border-radius: 8px;
+		width: 60%;
+		height: 45px;
+		font-size: 25px;
+		background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+		font-family: 'Grape Nuts', cursive;
+		color: black;
+	}
+
+	.noteactive:hover{
+		background-image: linear-gradient(to right, #5d5f5d67 0%, #e498d78a 100%);
+	}
+	
+	.noteactive:active{
+		background-image: linear-gradient(to right, #92c07d67 0%, #b176a78a 100%);
+	}
+
+	.textboxdiv{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.textbox{
+		background-color: transparent;
+		font-family: 'Grape Nuts', cursive;
+		font-weight: bold;
+		font-size: 20px;
+		background-image: url(../images/papernote.png);
+		background-repeat: no-repeat;
+		background-size:contain;
+		resize: none;
+		max-width: 600px;
+		max-height: 300px;
+		width: 600px;
+		height: 300px;
+	}
+
+
+
+	.buttonsdiv{
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.buttons{
+		width: 50px;
+		height: 25px;
+		border-radius: 10px;
+		margin: 5px;
+		position: relative;
+	}
+
+	.notecreator{
+		display: block;
+		
+	}
+
+	.article{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.tables{
+		text-align: center;
+		margin: 0px;
+		padding-top: 15px;
+		max-width: 130%;
+		height: 100%;
+		display: block;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background: none;
+	}
+
+
+	.tabledashcont{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+		max-width: 130%;
+		display: block;
+		background: none;
+		border: 1px;
+	}
+	
+	iframe{
+		height: 50dvh;
+		width: 100%;
+		text-align: center;
+		display: block;
+		align-items: center;
+		flex-direction: column;
+		border: dotted black 1px;
+		line-height: normal;
+	}
+
+	#close{
+		border:solid red 1px; 
+		height: 20px; 
+		width: 20px; 
+		font-weight: bold;
+		background-color: red;
+		font-weight: bold;
+		color: white;
+	}
+
+	#refreshform{
+		text-align: center;
+		display: block;
+	}
+
+	#refresh{
+		margin-top: 25px;
+		padding: 8px;
+		background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	}
+	#refresh:hover{
+		background-image: linear-gradient(to right, #5d5f5d67 0%, #e498d78a 100%);
+	}
+	
+	#refresh:active{
+		background-image: linear-gradient(to right, #92c07d67 0%, #b176a78a 100%);
+	}
+
+.rightcolm{
+	display: block;
+}
+
+/*  |||||||||||||||||
+	||||REGISTER||||| 
+	||||||||||||||||| */
+
+/* Section 2 */
+	
+	.line{
+		height: auto;
+		width: 100%;
+		display: block;
+		margin: 0px;
+	}
+
+	.linecolumn{
+		height: auto;
+		margin: 0px;
+	}
+
+	.articleregister{
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		line-height: auto;
+
+	}
+
+	.registerbox{
+		height: auto;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 0px;
+	}
+	.register{
+		padding: 15px;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		background-color: rgb(198, 196, 236, .5);
+		border-radius: 20px;
+		height: 100%;
+		margin: 0px;
+	}
+
+	article section div form{
+		margin: auto;
+		font-size: 20px;
+		font-family: 'Grape Nuts', cursive;
+		text-align: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.buttondiv{
+		font-size: 20px;
+		font-family: 'Grape Nuts', cursive;
+		text-align: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	article section div form button{
+		margin: 15px;
+		width: 150px;
+		border-radius: 5px;
+		font-size: 15px;
+		font-family: 'Grape Nuts', cursive;
+		cursor: pointer;
+		background-color: #f5ccffc4;
+	}
+
+	article section div form button:hover{
+		background-color: rgb(77, 70, 69, .3);
+	}
+
+	article section div form button:active{
+		background-color: rgba(172, 241, 243, 0.4);
+		;
+	}
+
+	/* End of Section 2 */
+
+	/* Section 3 */
+
+	.footerabsolute{
+		background-image: linear-gradient(to top, #a8ede928 0%, #fed6e33b 70%);
+		height: 75px;
+		padding: 25px;
+		margin-top: auto;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	/* End of Section 3 */
+
+/*  |||||||||||||||||
+	||||RESPONSIVE||| 
+	||||||||||||||||| */
+
+
+
+/* Large Sreen ||lg||*/
+@media(min-width:1200px){
+	.col-lg-12{width: 100%}
+	.col-lg-11{width: 91.66666666%}
+	.col-lg-10{width: 83.33333333%}
+	.col-lg-9{width: 75%}
+	.col-lg-8{width: 66.66666666%}
+	.col-lg-7{width: 58.33333333%}
+	.col-lg-6{width: 50%}
+	.col-lg-5{width: 41.66666666%}
+	.col-lg-4{width: 33.33333333%}
+	.col-lg-35{width:29.16666666%}
+	.col-lg-3{width: 25%}
+	.col-lg-2{width: 16.66666666%}
+	.col-lg-1{width: 8.33333333%}
+	.col-lg-0{width: none}
+}
+
+/* Medium Sreen ||md||*/
+@media(min-width:992px) and (max-width:1199px){
+	.col-md-12{width: 100%}
+	.col-md-11{width: 91.66666666%}
+	.col-md-10{width: 83.33333333%}
+	.col-md-9{width: 75%}
+	.col-md-8{width: 66.66666666%}
+	.col-md-7{width: 58.33333333%}
+	.col-md-6{width: 50%}
+	.col-md-5{width: 41.66666666%}
+	.col-md-4{width: 33.33333333%}
+	.col-md-3{width: 25%}
+	.col-md-2{width: 16.66666666%}
+	.col-md-1{width: 8.33333333%}
+	.col-md-0{width: none}
+}
+
+/* Small Sreen ||sm||*/
+@media(min-width:768px) and (max-width:991px){
+	.col-sm-12{width: 100%}
+	.col-sm-11{width: 91.66666666%}
+	.col-sm-10{width: 83.33333333%}
+	.col-sm-9{width: 75%}
+	.col-sm-8{width: 66.66666666%}
+	.col-sm-7{width: 58.33333333%}
+	.col-sm-6{width: 50%}
+	.col-sm-5{width: 41.66666666%}
+	.col-sm-4{width: 33.33333333%}
+	.col-sm-3{width: 25%}
+	.col-sm-2{width: 16.66666666%}
+	.col-sm-1{width: 8.33333333%}
+	.col-sm-0{width: none}
+}
+
+/* Extra Small Sreen ||xs||*/
+@media(max-width:767px) {
+	.col-xs-12{width: 100%}
+	.col-xs-11{width: 91.66666666%}
+	.col-xs-10{width: 83.33333333%}
+	.col-xs-9{width: 75%}
+	.col-xs-8{width: 66.66666666%}
+	.col-xs-7{width: 58.33333333%}
+	.col-xs-6{width: 50%}
+	.col-xs-5{width: 41.66666666%}
+	.col-xs-4{width: 33.33333333%}
+	.col-xs-3{width: 25%}
+	.col-xs-2{width: 16.66666666%}
+	.col-xs-1{width: 8.33333333%}
+	.col-xs-0{width: none}
+}
+

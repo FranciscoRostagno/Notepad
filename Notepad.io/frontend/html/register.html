@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Francisco Rostagno">
+    <meta name="description" content="Create your account">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.png">
+
+</head>
+
+<body>
+
+        <!--                        Section 1                    -->
+        <header class="box header col-lg-12">
+            <a href="../html/index.html" class="col-lg-3"id="logo">Notepad.io</a>
+            <div class="col-lg-6">
+                <div class="col-lg-6 dashfather"></div>
+                    <div class="col-lg-6 dashbutton">
+                        <a href="../html/dashboard.html" class="dashboardbutton">Note Dashboard</a>
+                    </div>
+            </div>
+            <div class="hamb col-lg-3">
+                <form action="../../backend/php/login.php" class="user col-lg-8" method="POST">
+                    <table class="userinputs">
+                        <tr>
+                            <th><input type="email" name="email" placeholder="example@gmail.com"></th>
+                            <th><button type="submit">Login</button></th>
+                        </tr>
+                        <tr>
+                            <th><input type="password" name="password" placeholder="*****"></th>
+                            <th><a href="../html/register.html">SignUp</a></th>
+                        </tr>
+                    </table>
+                </form>
+                <img src="../images/user.svg" alt="" class="col-lg-4 hamburguer">
+            </div>
+    </header>  
+
+        <!--                        Section 2                    -->
+    <article class="box col-lg-12 articleregister">
+        <div class="col-lg-12 line "></div>
+        <section class="col-lg-12 registerbox ">
+            <aside class="col-lg-3 linecolumn"></aside>
+            <div class="registerbox col-lg-6 ">
+                <form class="register col-lg-12"action="../../backend/php/regist.php" method="POST">
+
+                    <div class="col-lg-12">
+                        <label class="col-lg-6" for="Usernam">Username:</label>
+                        <input class="col-lg-6" id="Usernam" type="text" name="username" placeholder="example123">
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="col-lg-6" for="e-mail">E-mail:</label>
+                        <input class="col-lg-6" id="e-mail" type="email" name="e-mail" placeholder="example@gmail.com">
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="col-lg-6" for="pass">Password:</label>
+                        <input class="col-lg-6" id="pass" type="password" name="password" placeholder="******">
+                    </div>
+                    <div class="col-lg-12 buttondiv">
+                        <div class="col-lg-35"></div>
+                        <button class="col-lg-2" type="submit">Submit</button>
+                        <div class="col-lg-1"></div>
+                        <button class="col-lg-2" type="reset">Clear</button>
+                        <div class="col-lg-35"></div>
+                    </div>
+                </form>
+            </div>
+            <aside class="col-lg-3 linecolumn"></aside>
+        </section>
+        <div class="col-lg-12 line "></div>
+    </article>
+
+    <div class="col-lg-4"></div>
+    <!--                        Section 3                    -->
+    <footer class="footerabsolute col-lg-12">
+        <div class="disclaimer">All rights of the site are reserved © </div>
+    </footer>
+
+
+</body>
+
+</html>

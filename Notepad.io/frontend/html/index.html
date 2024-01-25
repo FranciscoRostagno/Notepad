@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Francisco Rostagno">
+    <meta name="description" content="Take your notes easy">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.png">
+</head>
+
+
+<body>
+    <!--                        Section 1                    -->
+    <header class="box header col-lg-12">
+        <a href="../html/index.html" class="col-lg-3"id="logo">Notepad.io</a>
+        <div class="col-lg-6">
+            <div class="col-lg-6 dashfather"></div>
+                <div class="col-lg-6 dashbutton">
+                    <a href="../html/dashboard.html" class="dashboardbutton">Note Dashboard</a>
+                </div>
+        </div>
+        <div class="hamb col-lg-3">
+            <form action="../../backend/login.php" class="user col-lg-8" method="POST">
+                <table class="userinputs">
+                    <tr>
+                        <th><input type="email" name="email" placeholder="example@gmail.com"></th>
+                        <th><button type="submit">Login</button></th>
+                    </tr>
+                    <tr>
+                        <th><input type="password" name="password" placeholder="*****"></th>
+                        <th><a href="../html/register.html">SignUp</a></th>
+                    </tr>
+                </table>
+            </form>
+            <img src="../images/user.svg" alt="" class="col-lg-4 hamburguer">
+        </div>
+</header>  
+
+    <!--                        Section 2                    -->
+    <article>
+        <div class="box article col-lg-12">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <h1 class="title">Make it easy with notes</h1>
+                <p>Are you afraid to forget it? make a note</p>
+                <img src="../images/main.svg" class="articleimg">
+                <h1 class="title">A simple way to be ordered</h1>
+             </div>
+            <div class="col-lg-3"></div>
+        </div> 
+        <section class="box notes" id="notes">
+            <h2 class="sub">Your life with notes</h2>
+            <div class="notebox">
+                <div class="checklist notes col-lg-12">
+                    <div class="notes col-lg-4 notebox">
+                        <img src="../images/note1.jpeg" class="imagebox"alt="">
+                        <br>
+                        <h3 class="sub"><span class="number">1</span>Order your activities</h3>
+                    </div>
+                    <div class="notes col-lg-4 notebox">
+                        <img src="../images/wallpaper.jpg" class="imagebox"alt="">
+                        <br>
+                        <h3 class="sub"><span class="number">2</span>Remember everything</h3>
+                    </div>
+                    <div class="notes col-lg-4 notebox">
+                        <img src="../images/note2.jpg" class="imagebox"alt="">
+                        <br>
+                        <h3 class="sub"><span class="number">3</span>Enjoy the tranquility</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <!--                        Section 3                    -->
+    <div class="box firstnote col-lg-12">
+        <a class="button" href="../html/dashboard.html">Create your first note</a>
+    </div>
+
+    <!--                        Section 4                    -->
+    <footer class="footer col-lg-12">
+        <div class="disclaimer">All rights of the site are reserved © </div>
+    </footer>
+
+</body>
+
+
+</html>

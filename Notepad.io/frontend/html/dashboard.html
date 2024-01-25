@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Francisco Rostagno">
+    <meta name="description" content="Take your notes easy">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.png">
+    
+</head>
+
+
+
+<body>
+        <!--                        Section 1                    -->
+        <header class="box header col-lg-12">
+            <a href="../html/index.html" class="col-lg-3"id="logo">Notepad.io</a>
+            <div class="col-lg-6">
+                <div class="col-lg-6 dashfather"></div>
+                    <div class="col-lg-6 dashbutton">
+                        <a href="../html/dashboard.html" class="dashboardbutton">Note Dashboard</a>
+                    </div>
+            </div>
+            <div class="hamb col-lg-3">
+                <form action="../../backend/php/login.php" class="user col-lg-8" method="post">
+                    <table class="userinputs">
+                        <tr>
+                            <th><input type="email" name="email" placeholder="example@gmail.com"></th>
+                            <th><button type="submit">Login</button></th>
+                        </tr>
+                        <tr>
+                            <th><input type="password" name="password" placeholder="*****"></th>
+                            <th><a href="../html/register.html">SignUp</a></th>
+                        </tr>
+                    </table>
+                </form>
+                <img src="../images/user.svg" alt="" class="col-lg-4 hamburguer">
+            </div>
+    </header>  
+
+        <!--                        Section 2                    -->
+    <section class="box dashboard col-lg-12">
+        <aside class="menu col-lg-3">
+            <div class="notebutton">
+                <button class="noteactive" id="createnote" onclick="newnote();">Create Note</button>
+            </div>
+            <div class="anchors">
+                <a href="#" onclick="activenote();" class="col-lg-12">Active Notes</a>
+            </div>
+            <div class="anchors">
+                <a href="#" onclick="archivednote();" class="col-lg-12">Archived Notes</a>
+            </div>
+            <div class="anchors">
+                <a href="#" onclick="discardenote();" class="col-lg-12">Discarded Notes</a>
+            </div>  
+        </aside>
+        <article class="article dash col-lg-6">
+
+            <!--                        Note Creation                    -->
+
+            <form class="notecreator col-lg-12" id="notecreator" action="../../backend/php/note.php" method="post">
+                <div    class="textboxdiv col-lg-12">
+                    <textarea class="textbox col-lg-12" maxlength="700" name="textbox" placeholder="Write your new note here..."></textarea>
+                </div>
+                <div    class="buttonsdiv col-lg-12">
+                    <button class="buttons col-lg-2" type="submit">Save</button>
+                    <button class="buttons col-lg-2" type="reset">Clear</button>
+                </div>
+            </form>
+             <!--                        Note Read                    -->
+
+
+            <!--                        Note Dashboard                   -->
+
+            <div class="tables col-lg-12">
+                <div col-lg-2></div>
+                <div class="col-lg-12 tabledashcont" id="activenotes" >
+                    <iframe class="col-lg-12 iframe" src="../php/shownotes.php"  frameborder="0"></iframe>
+                </div>
+                <div class="col-lg-12 tabledashcont" id="archivednotes" style="display: none;">
+                    <iframe class="col-lg-12 iframe"  src="../php/showarchivednotes.php" frameborder="0"></iframe>
+                </div>
+                <div class="col-lg-12 tabledashcont" id="discardednotes" style="display: none;">
+                    <iframe class="col-lg-12 iframe"  src="../php/showdiscardednotes.php" frameborder="0"></iframe>
+        </article>
+        <div class="rightcolm col-lg-3"></div>
+    </section>
+
+
+
+        <!--                        Section 3                    -->
+    <footer class="footer col-lg-12">
+            <div class="disclaimer">All rights of the site are reserved © </div>
+     </footer>
+
+
+     <!--                        Scripts                   -->
+
+     <script src="../js/functions.js"></script>
+
+
+</body>
+
+</html>
