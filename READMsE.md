@@ -1,11 +1,11 @@
 # Notepad
-This is my website about the exercise
+"This is my website about the exercise
 	The database must consist of 3 entities:
 	notes = {N_Cod, N_Cont, N_State, N_Archived}
 	        _______________
 		N_Cod  = Primary key, int, autoincremental.
 		N_Cont = Varchar(700).
-		N_State = int {0,1} 0 = pending, 1 = complete.
+		N_State = int {0,1} 0 = pending, 1 = complete."
 		N_Archived = int {-1, 0, 1} -1 = discarded, 0 = Unnarchived, 1 = archived.
 .
 	users = {UName, UMail, UPassword}
